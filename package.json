@@ -1,7 +1,7 @@
 {
   "name": "graphiql-explorer",
   "homepage": ".",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "graphiql": "^0.14.2",
