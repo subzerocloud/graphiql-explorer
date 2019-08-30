@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "flow": "flow",
     "clean": "rm -rf build dist && mkdir -p dist",
-    "package": "cd build && zip ../dist/relese.zip static/js/*.js static/css/*.css index.html",
+    "package": "cd build && zip ../dist/relese.zip static/js/*.js static/css/*.css index.html manifest.json favicon.ico",
     "predeploy": "yarn build",
     "release": "yarn clean && yarn build && yarn package && release-it",
     "prettier": "prettier --write \"src/**/*.js\" \"docs/**/*.md\" README.md"
