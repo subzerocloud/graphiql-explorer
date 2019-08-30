@@ -18,6 +18,7 @@
     "eject": "react-scripts eject",
     "flow": "flow",
     "predeploy": "yarn build",
+    "release": "release-it --dry-run",
     "prettier": "prettier --write \"src/**/*.js\" \"docs/**/*.md\" README.md"
   },
   "eslintConfig": {
