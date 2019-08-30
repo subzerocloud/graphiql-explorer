@@ -17,8 +17,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "flow": "flow",
+    "clean": "rm -rf build dist && mkdir -p dist",
+    "package": "cd build && zip ../dist/relese.zip static/js/*.js static/css/*.css index.html",
     "predeploy": "yarn build",
-    "release": "release-it",
+    "release": "yarn clean && yarn build && yarn package && release-it",
     "prettier": "prettier --write \"src/**/*.js\" \"docs/**/*.md\" README.md"
   },
   "eslintConfig": {
