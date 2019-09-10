@@ -12,7 +12,7 @@ import "./App.css";
 import type { GraphQLSchema } from "graphql";
 
 function fetcher(params: Object): Object {
-  return fetch('http://localhost:8080/graphql/' + (params.schema_type || 'simple'), {
+  return fetch('/graphql/' + (params.schema_type || 'simple'), {
     method: 'post',
     headers: {
       'Accept': 'application/json',
